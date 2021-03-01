@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  
+}
+.background {
+    background-image: url(https://riskmagazine.nl/f/content-platform/article-cover?id=PJtGUHIBZjv98e_MR9jd);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+/* For header section */
+.header .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* For navigation */
+.nav {
+  background-color: #2b9fdc;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.nav .material-icons {
+  margin-right: 6px;
+}
+
+.menu-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* For content */
+.content {
+  word-spacing: -1ch;
+  margin-top: 10px;
+}
+
+.main, .aside {
+  display: inline-block;
+  word-spacing: normal;
+  vertical-align: top;
+}
+
+.main {
+  width: calc(75% - 10px);
+  margin-right: 10px;
+}
+
+.aside {
+  width: 25%;
+  background-color: #fff;
+  position: sticky;
+  top: 66px;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 160px;
+  border: 0;
+  height: 30px;
+}
+
+/* For author */
+.author {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.author-image {
+  width: 100px;
+}
+
+.author-name {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.author-description {
+  margin: 0;
+}
+
+/* For main content */
+.post {
+  padding-bottom: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.post-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.post-heading {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.post-time {
+  margin-top: 0;
+  color: #666;
+}
+
+.post-short-detail {
+  margin-bottom: 0px;
+}
+
+/* For footer */
+.footer {
+  background-color: #2b9fdc;
+  padding: 20px;
+}
+
+.copy-right {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+.row1, .row3 {
+  width: 49%;
+  display: inline-block;
+  padding-left: 16px;
+}
+.row2, .row4 {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 16px;
+}
+p {
+  text-align: justify;
+}
