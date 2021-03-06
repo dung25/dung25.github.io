@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="face.css" />
+  </head>
+  <body>
+    <div class="loginsignup">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="content-left">
+            <h1>facebook</h1>
+            <h2>
+              Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống
+              của bạn.
+            </h2>
+          </div>
+          <div class="content-right">
+            <form action="">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Email address or phone number"
+                />
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Password" />
+              </div>
+              <div class="login">
+                <a href="" class="btn">Đăng nhập</a>
+              </div>
+              <div class="forgot">
+                <a href="">Quên mật khẩu?</a>
+              </div>
+              <div class="line"></div>
+              <div class="create-btn">
+                <label class="button" for="popup">Tạo tài khoản mới</label>
+              </div>
+            </form>
+            <p>
+              <a href="">Tạo Trang</a> dành cho người nổi tiếng, nhãn hiệu hoặc
+              doanh nghiệp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type="checkbox" id="popup" />
+    <div class="popup">
+      <div class="popup-content">
+        <label id="close" for="popup">❌</label>
+        <form action="" name="signup">
+          <h2>Đăng ký</h2>
+
+          <p>Nhanh chóng và dễ dàng</p>
+        </form>
+
+        <div class="username">
+          <div class="username-first">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Họ"
+              required
+              autofocus
+            />
+            <span></span>
+          </div>
+
+          <div class="username-last">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Tên"
+              required
+            />
+            <span></span>
+          </div>
+        </div>
+
+        <div class="email">
+          <input
+            type="text number"
+            id="email"
+            name="email"
+            placeholder="Số di động hoặc email"
+            required
+          />
+          <span></span>
+        </div>
+
+        <div class="password">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Mật khẩu mới"
+            required
+          />
+          <span></span>
+        </div>
+
+        <div class="date">
+          <p>Ngày sinh</p>
+          <div class="day">
+            <input
+              type="date"
+              id="date"
+              name="date"
+              placeholder="Mật khẩu mới"
+              required
+            />
+            <span></span>
+          </div>
+        </div>
+        <p>Giới tính</p>
+
+        <div class="gender-option">
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="fermale">Nữ</label>
+        </div>
+
+        <div class="gender-option">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="other">Nam</label>
+        </div>
+
+        <div class="gender-option">
+          <input type="radio" id="other" name="gender" value="bd" />
+          <label for="other">Other</label>
+        </div>
+
+        <div class="resign">
+          <button type="submit">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

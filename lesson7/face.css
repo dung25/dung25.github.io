@@ -1,0 +1,240 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	font-size: 14px;
+	font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+.loginsignup{
+	padding: 120px;
+}
+.container{
+	max-width: 1000px;
+	margin: auto;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+.content-left{
+	max-width: 500px;
+	margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.content-left h1{
+	font-size: 50px;
+	color: #1877f2;
+	margin-bottom: 20px;
+	font-weight: 900;
+}
+.content-left h2{
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+.content-right{
+	max-width: 400px;
+	margin-left: 50px;
+	text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.content-right form{
+	width: 400px;
+	height: 400px;
+	background: #fff;
+	border-radius: 5px;
+	padding: 15px;
+	box-shadow: -1px -1px 8px -1px rgba(0,0,0,0.52);
+	margin-bottom: 30px;
+}
+.content-right form input{
+	width: 100%;
+	height: 50px;
+	font-size: 17px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.content-right form input:hover{
+	border: 2px solid #1c1e21;
+	background: #f0f2f5;
+}
+.btn {
+	font-size: 20px;
+	background: #1877f2;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.login a{
+	display: block;
+}
+
+.create-btn label {
+	display: inline-block;
+    font-size: 20px;
+    color: white;
+    width: 205px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+	margin-top: 20px;
+    padding-top: 15px;
+	background: #42b72a;
+	transition: .3s;
+}
+.create-btn a:hover{
+	background: #42b72a;
+}
+.forgot a{
+	font-size: 14px;
+	line-height: 19px;
+	color:#1877f2;
+}
+.forgot a:hover,
+.content-right p a:hover{
+	text-decoration: underline;
+}
+.content-right p a{
+	color: #1c1e21;
+	font-weight: 600;
+}
+input[type="text"],
+input[type="password"] {
+    padding: 0 15px;
+}
+.line{
+    border-bottom: 2px solid #dadde1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.button {
+    height: 50px;
+    width: 370px;
+    border-radius: 0;
+    /* padding: 0 15px; */
+    background-color: transparent;
+}
+
+
+.button {
+    width: unset;
+}
+
+input:focus,
+select:focus {
+    color: blue;
+    border-color: blue;
+}
+
+
+button:focus {
+    outline: none;
+    border-color: coral;
+    box-shadow: 0 0 0 2px coral;
+}
+#popup {
+    display: none;
+}
+
+#popup:not(:checked) + .popup {
+    visibility: hidden;
+}
+
+#popup:checked + .popup {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 163, 163, 0);
+    transition: all 0.5s;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 500px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.5s;
+    position: relative;
+    box-shadow: -1px -1px 8px -1px rgb(0 0 0 / 52%);
+}
+
+#popup:checked + .popup .popup-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.username-first, .username-last {
+    display: inline-block;
+}
+.popup-content input {
+    height: 40px;
+    width: 225px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+input[type="password"], input[type="text number"] {
+    width: 454px;
+}
+.gender-option {
+    border: 1px solid black;
+    border-radius: 3px;
+    display: inline-block;
+    width: 32%;
+    height: 40px;
+    vertical-align: middle;
+    padding: 5px;
+}
+input[type="radio"] {
+    width: 30%;
+    vertical-align: middle;
+}
+#female, #male, #other {
+    font-size: 30px;
+}
+.gender-option > input {
+    vertical-align: middle;
+    height: 20px;
+}
+input:invalid {
+    border-color: red;
+}
+.resign {
+    text-align: center;
+    padding-top: 20px;
+}
+.resign button {
+    width: 200px;
+    height: 40px;
+    background: #42b72a;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="login-form" action="" method="" name="login">
+      <h2>Login form</h2>
+      <div class="username">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Nhập username"
+          required
+          autofocus
+        />
+        <span></span>
+      </div>
+
+      <div class="password">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Nhập password"
+          required
+        />
+        <span></span>
+      </div>
+
+      <div class="gender">
+        <label for="">Gender</label>
+        <div class="gender-option">
+          <input type="radio" id="male" name="gender" value="male" checked />
+          <label for="male">Male</label>
+        </div>
+
+        <div class="gender-option">
+          <input type="radio" id="fermale" name="gender" value="fermale" />
+          <label for="fermale">Fermale</label>
+        </div>
+
+        <div class="gender-option">
+          <input type="radio" id="other" name="gender" value="bd" />
+          <label for="other">Other</label>
+        </div>
+      </div>
+
+      <div class="option">
+        <label for="">Other options</label>
+        <div class="option-item">
+          <input
+            type="checkbox"
+            name="option"
+            id="remember"
+            value="remember"
+            checked
+          />
+          <label for="remember">Remember me</label>
+        </div>
+
+        <div class="option-item">
+          <input
+            type="checkbox"
+            name="option"
+            id="email"
+            value="email"
+            checked
+          />
+          <label for="email">I want to recieve email</label>
+        </div>
+      </div>
+
+      <div class="avatar">
+        <label for="avatar">Avatar</label>
+        <input type="file" accept="image/*;capture=camera" multiple />
+      </div>
+
+      <div class="age">
+        <label for="age">Age</label>
+        <input type="number" min="18" max="100" step="2" />
+      </div>
+
+      <div class="birthday">
+        <label for="birthday">Birthday</label>
+        <input name="birthday" id="birthday" type="date" value="1992-05-24" />
+      </div>
+
+      <div class="education">
+        <label for="education">Education</label>
+        <select name="education" id="education">
+          <option value="">---</option>
+          <option value="kindergarten">Lớp mầm</option>
+          <option value="tieu-hoc">Tiểu học</option>
+          <option value="trung-hoc">Trung học</option>
+          <option value="dai-hoc">Đại học</option>
+          <option value="dr">Tiến sĩ</option>
+          <option value="gs" selected>Giáo sư</option>
+        </select>
+      </div>
+
+      <div class="income">
+        <label for="income">Mức thu nhập</label>
+        <input
+          type="range"
+          name="income"
+          id="income"
+          oninput="incomeValue.value = income.value"
+          min="1"
+          max="1000"
+          value="200"
+        />
+        <output for="income" name="incomeValue">200</output>
+      </div>
+
+      <div class="favourite-color">
+        <label for="favorite-color">Favourite color</label>
+        <input
+          type="color"
+          name="favorite-color"
+          id="favorite-color"
+          placeholder="color"
+        />
+      </div>
+
+      <div class="action">
+        <button type="submit">Gửi dữ liệu</button>
+        <label class="button" for="popup">Click em</label>
+      </div>
+    </form>
+
+    <input type="checkbox" id="popup" />
+    <div class="popup">
+      <div class="popup-content">
+        <label id="close" for="popup">❌</label>
+        <form action="" name="signup">
+          <h2>Form signup</h2>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+            consequatur asperiores vitae tempora labore alias dolores
+            perferendis maxime eius iusto reprehenderit fuga veniam facilis,
+            nostrum hic? Ipsum facere modi numquam?
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
