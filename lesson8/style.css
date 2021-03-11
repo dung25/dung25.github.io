@@ -1,0 +1,29 @@
+.container {
+    height: 300px;
+    background: darkorchid;
+    display: flex;
+    /* tùy chỉnh hướng trục chính */
+    flex-direction: row;
+    /* tùy chỉnh theo trục chính */
+    justify-content: center;
+    /* tùy chỉnh theo trục cắt */
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch  ;
+    gap: 10px;
+}
+.flex-item {
+    background: coral;
+    order: 0;
+    flex-grow: 1;
+}
+/* .flex-item.bottom {
+    align-self: flex-end;
+    order: -1;
+}
+.flex-item.first {
+    order: -2;
+} */
+.flex-item.first {
+    flex-shrink: 2;
+}
