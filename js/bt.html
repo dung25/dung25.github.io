@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function cvhinhtron(r) {
+        return r * 2 * Math.PI;
+      }
+      console.log(cvhinhtron(3));
+
+      function dthinhtron(r) {
+        return r ** 2 * Math.PI;
+      }
+      console.log(dthinhtron(5));
+
+      function exchange(a) {
+        return a / 100;
+      }
+      console.log(exchange(500));
+
+      function exchange2(a) {
+        return a / 60;
+      }
+      console.log(exchange2(400));
+
+      function ptb1(a, b, c) {
+        let x = (c - b) / a;
+        if (a == 0) {
+          if ((b == 0, c == 0)) console.log("PT vô số nghiệm");
+          else console.log("PT vô nghiệm");
+        } else {
+          console.log("PT có 1 nghiệm");
+          return x;
+        }
+      }
+      console.log(ptb1(2, 3, 4));
+
+      function exchange3(a) {
+        return 1.8 * a + 32;
+      }
+      console.log(exchange3(50));
+
+      function caculateBMI(a, b) {
+        let c = a / 100;
+        return b / c ** 2;
+      }
+      console.log(caculateBMI(140, 70));
+
+      function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      console.log(random(0, 1000));
+    </script>
+  </body>
+</html>

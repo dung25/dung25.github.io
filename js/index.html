@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="index.js"></script>
+    <script>
+        // Đặt ở phần cuối cùng của body
+        console.log('Hello world')
+        // alert('Hello world')
+
+        // khai báo biến
+        let name
+        name = 'Nguyễn Văn A'
+        console.log(name)
+
+        name = 'B'
+        console.log(name)
+
+        name = 10
+        console.log(name)
+
+        let email = 'abc@gmail.com'
+        console.log(email)
+
+        const Number = 20
+        console.log(Number) 
+
+        // phạm vi của biến (scope)
+        function abc() {
+            // function scope
+            age = 24
+            console.log(age)
+        }
+
+        abc()
+        console.log(age)
+
+        {
+            // block scope
+        }
+
+        // kiểm tra dữ liệu của biến
+        let number = 10;
+        console.log(typeof number)
+
+        let text = '\'Hà Nội\' hôm nay'
+        + ' trời đẹp quá'
+        console.log(text)
+
+        let firstName = 'Nguyen'
+        let lastName = 'Dung'
+        let fullName = firstName + ' ' + lastName
+        console.log(fullName)
+
+        let text1 = `Hà Nội 
+        hôm nay trời đẹp`
+        console.log(text1)
+
+        let text2 = `Xin chào, tên tôi là ${fullName}, năm nay rôi ${2021-1999}`
+        console.log(text2)
+
+        let num1 = 20
+        let num2 = 6
+
+        console.log(num1 + num2)
+        console.log(num1 - num2)
+        console.log(num1 * num2)
+        console.log(num1 / num2)
+        console.log(num1 % num2)
+
+        console.log(Math.PI)
+        console.log(Math.sqrt(num1))
+        console.log(Math.pow(num1, num2))
+        console.log(num1 ** num2)
+
+        console.log(Math.max(1,2,3,4,5,6))
+        console.log(Math.min(1,2,3,4,5,6))
+
+        // Function
+        // Định nghĩa
+        function sayHello() {
+            console.log('Xinfffff')
+        }
+        sayHello()
+
+        function sayHello1(name, birth) {
+            console.log(`Xin chào ${name}. Năm này ${2021-birth}`)
+        }
+        sayHello1('Dung',1985)
+
+        // function tra về giá trị
+        function sum(a=10,b=55) {
+            return a + b
+        }
+        let data = sum(3,4) 
+        console.log(data)
+        console.log(sum(5))
+
+        function print() {
+            console.log('Xin chào các bạn')
+        }
+        print()
+        function print2(X) {
+            console.log(`Xin chào ${X}`)
+        }
+        print2('Dung')
+
+        function print3(X) {
+            console.log(`Xin chào "${X}"`)
+        }
+        print3('Dung')
+
+        function sum(a,b) {
+            return a + b
+        }
+        console.log(sum(2,3))
+
+        function square(a) {
+            return a**2
+        }
+        console.log(square(8))
+
+        function theky(a) {
+            return Math.ceil(a/100)
+        }
+        console.log(theky(2520))
+    </script>
+</body>
+</html>
