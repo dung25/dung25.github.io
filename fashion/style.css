@@ -1,0 +1,180 @@
+@font-face {
+  src: url(font/gothamhtf-bold-webfont.ttf);
+  font-family: gothamhtf-bold;
+}
+@font-face {
+  src: url(font/gothamhtf-book-webfont.ttf);
+  font-family: gothamhtf-book;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: gothamhtf-bold;
+  font-weight: 400;
+  color: black;
+  height: 2000px;
+  line-height: 1, 8;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+p {
+  margin: 0;
+  font-size: 12px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  letter-spacing: 1mm;
+}
+strong,
+b,
+th {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: start;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-space {
+  justify-content: space-between;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.col-1 {
+  flex-basis: 20%;
+}
+.col-2 {
+  flex-basis: 50%;
+}
+.main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: relative;
+}
+/* header */
+.nav {
+  position: absolute;
+  left: 10%;
+}
+.nav li {
+  list-style: none;
+  padding: 10px;
+}
+.nav-link {
+  color: black;
+  font-family: gothamhtf-book;
+}
+img .banner {
+  z-index: 1;
+  position: absolute;
+}
+.nav {
+  z-index: 2;
+  position: absolute;
+}
+.brand {
+  z-index: 2;
+  position: absolute;
+  align-self: center;
+}
+.ul {
+    background: coral;
+}
+/* section */
+section h1 {
+  color: white;
+}
+.info {
+  text-align: center;
+  margin: 10px;
+}
+
+footer {
+  margin: 40px;
+}
+input {
+  width: 350px;
+  height: 30px;
+}
+button {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+.brand {
+    text-align: center;
+}
+/* footer */
+.footer li {
+  list-style: none;
+  padding-top: 5px;
+  font-family: gothamhtf-book;
+}
+.social {
+  margin-top: 20px;
+}
+.social i {
+  margin-left: 10px;
+  size: 50px;
+}
+.more {
+  margin: auto;
+}
+.more li {
+  list-style: none;
+  padding: 10px;
+}
+
