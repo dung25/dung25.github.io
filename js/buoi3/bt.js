@@ -17,13 +17,13 @@ function checkDscArr(arr) {
     return true;
   }
   for (let i = 0; i < arr.length - 1; i++) {
-    if (arr[i + 1] - arr[i] <= 0) {
-      return true;
+    if (arr[i + 1] - arr[i] >= 0) {
+      return false;
     }
   }
-  return false;
+  return true;
 }
-console.log(checkDscArr([1, 2, 3]));
+console.log(checkDscArr([38, 222, 8]));
 // B3
 function checkEvenAsc(arr) {
   for (let i = 0; i < arr.length; i++) {
@@ -33,10 +33,10 @@ function checkEvenAsc(arr) {
     if (arr[i] % 2 != 0 || arr[i + 1] - arr[i] <= 0) {
       return false;
     }
-    return true;
   }
+  return true;
 }
-console.log(checkEvenAsc([2, 4, 8]));
+console.log(checkEvenAsc([2,4,7]));
 // B4
 function checkOddAsc(arr) {
   for (let i = 0; i < arr.length; i++) {
@@ -46,39 +46,39 @@ function checkOddAsc(arr) {
     if (arr[i] % 2 == 0 || arr[i + 1] - arr[i] >= 0) {
       return false;
     }
-    return true;
   }
+  return true;
 }
-console.log(checkOddAsc([11, 3, 1]));
+console.log(checkOddAsc([2, 11, 3, 2]));
 // B5
 function maxArr(arr) {
   let max = arr[0];
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] > max) {
-      return (max = arr[i]);
+      max = arr[i];
     }
   }
-  return (max = arr[0]);
+  return max;
 }
-console.log(maxArr([-10, -35, -5, -11, -9]));
+console.log(maxArr([5, 80, 7, -10]));
 // B6
 function minArr(arr) {
   let min = arr[0];
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] < min) {
-      return (min = arr[i]);
+      min = arr[i];
     }
   }
-  return (min = arr[0]);
+  return min;
 }
-console.log(minArr([-10, -35, -5, -11, -9]));
-// b7
+console.log(minArr([-36, -10, -35, -5, -119, -9]));
+// B7
 function newArr(arr) {
-  let newArr = [];
+  let empArr = [];
   for (let i = 0; i < arr.length; i++) {
-    newArr.push(arr[i] % 2);
+    empArr.push(arr[i] % 2);
   }
-  return newArr;
+  return empArr;
 }
 console.log(newArr([5, 2, 3, 14]));
 // B8
