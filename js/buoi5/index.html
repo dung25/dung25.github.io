@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
+    />
+  </head>
+  <body>
+    <pre><code class="language-javascript">
+        B1
+        function checkStringExist(str1, str2) {
+            if (str1.indexOf(str2) == -1) {
+              return false;
+            }
+            return true;
+          }
+          console.log(checkStringExist("I love you", "love"));
+    </code></pre>
+    
+    <pre><code class="language-javascript"></code>
+        B2
+        function shortenString(str) {
+            if (str.length > 8) {
+              let shortStr = str.slice(0, 8) + "...";
+              return shortStr;
+            }
+            return str;
+          }
+          console.log(shortenString("Xin"));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B3
+        function capitalizeString(str) {
+            let newStr = str.toLowerCase();
+            let newStr2 = newStr.split(" ");
+            for (let i = 0; i < newStr2.length; i++) {
+              newStr2[i] = newStr2[i].charAt(0).toUpperCase() + newStr2[i].slice(1);
+            }
+            return newStr2.join(" ");
+          }
+          console.log(capitalizeString("Chào mỪng"));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B4
+        function repeatStringWithDash(str, num) {
+            let newStr = `${str}-`.repeat(num);
+            return newStr.slice(0, newStr.length - 1);
+          }
+          console.log(repeatStringWithDash("a", 5));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B5
+        function reverseString(str) {
+            let words = str.split("");
+            let reverseWords = words.reverse();
+            let reverseString = reverseWords.join("");
+            return reverseString;
+          }
+          console.log(reverseString("Hello"));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B6
+        function checkSymmetricString(str) {
+            let newStr = str.toLowerCase().split(" ");
+            let newStr2 = newStr.join("");
+            let newArr = newStr2.split("");
+            for (i = 0; i < newArr.length; i++) {
+              if (newArr[i] != newArr[newArr.length - i - 1]) {
+                return false;
+              }
+            }
+            return true;
+          }
+          console.log(checkSymmetricString("Race car"));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B7
+        function countNumberVowels(str) {
+            let vowels = "aeiou";
+            let count = 0;
+            for (let i = 0; i < str.length; i++) {
+              if (vowels.indexOf(str[i]) != -1) {
+                count += 1;
+              }
+            }
+            return count;
+          }
+          console.log(countNumberVowels("hello hien"));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B8
+        function confirmEnding(str1, str2) {
+            let endStr1 = str1.slice(str1.length - str2.length);
+            if (endStr1 != str2) {
+              return false;
+            }
+            return true;
+          }
+          console.log(confirmEnding("gdgdghillo", "illo"));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B9
+        function getFirstLetter(str) {
+            let arr = str.split(" ");
+            for (let i = 0; i < arr.length; i++) {
+              arr[i] = arr[i].charAt(0);
+            }
+            return arr.join(" ");
+          }
+          console.log(getFirstLetter("xin chào các bạn"));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B10
+        function alphabet_order(str) {
+            arr1 = str.split(" ");
+            str2 = arr1.join("");
+            return str2.split("").sort().join("");
+          }
+          console.log(alphabet_order("HellO WorL fsd"));
+    </code></pre>
+
+    <pre><code class="language-javascript"></code>
+        B11
+        function find_FirstNotRepeatedChar(str) {
+            let arra = str.split(" ");
+            let str2 = arra.join("");
+            let arra1 = str2.split("");
+            let result = [];
+            let ctr = 0;
+            for (let x = 0; x < arra1.length; x++) {
+              ctr = 0;
+              for (let y = 0; y < arra1.length; y++) {
+                if (arra1[x] === arra1[y]) {
+                  ctr += 1;
+                }
+              }
+              if (ctr < 2) {
+                result.push(arra1[x]);
+              }
+            }
+            return result.join(",");
+          }
+          console.log(find_FirstNotRepeatedChar("abce abcdf"));
+    </code></pre>
+
+
+
+    <script src="main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+  </body>
+</html>
