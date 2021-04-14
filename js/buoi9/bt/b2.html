@@ -30,6 +30,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
       }
       #v1,
       #v2,
@@ -44,10 +45,15 @@
         padding: 10px;
       }
       .check button {
+        border: none;
         font-size: 15px;
         width: 100px;
+        height: 50px;
         margin-left: 50px;
+        background-color: #0984e3;
+        color: #fff;
       }
+      
     </style>
   </head>
   <body>
@@ -77,12 +83,14 @@
       function randomPosition(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
       }
+
       let n1 = randomPosition(0, 100);
       let n2 = randomPosition(0, 100);
       document.getElementById("v1").value = n1;
       document.getElementById("v2").value = n2;
 
       ans = n1 + n2;
+      console.log(ans);
 
       const checkAns = () => {
         let userAns = document.getElementById("ans").value;
@@ -93,7 +101,7 @@
         }
 
         document.getElementById("ans").value = "";
-        
+
         let n1 = randomPosition(0, 100);
         let n2 = randomPosition(0, 100);
 
