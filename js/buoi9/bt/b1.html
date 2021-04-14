@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        display: block;
+        background-color: #f3f3f3;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        float: left;
+        margin: 5px;
+      }
+
+      .box:hover {
+        transform: scale(0.9);
+        transition-duration: 0.5s;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .box:active {
+        transform: scale(1.5);
+        transition-duration: 0.5s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <body>
+      <div class="wrap">
+        <h1>JS DOM</h1>
+        <button id="btn">More boxes</button>
+        <h4 id="score">Total box:<span class="points">0</span></h4>
+
+        <div class="boxes"></div>
+      </div>
+    </body>
+
+    <script>
+      const btn = document.querySelector("#btn");
+      const point = document.querySelector(".points");
+      console.log(point.innerText);
+      let colors = ["#3498db", "#9b59b6", "#e74c3c", "#2c3e50", "#d35400"];
+
+      for (let i = 0; i < colors.length; i++) {
+        var box = document.createElement("div");
+        box.classList.add("box");
+        box.style.backgroundColor = colors[i];
+        document.querySelector(".wrap").appendChild(box);
+      }
+      const allBox = document.querySelectorAll(".box");
+      point.innerText = allBox.length;
+
+      allBox.forEach((e) => {
+        e.addEventListener("click", function () {
+          e.classList.remove("box");
+          point.innerText = allBox.length;
+        });
+      });
+
+      btn.addEventListener("click", function () {
+        for (let i = 0; i < colors.length; i++) {
+          let box = document.createElement("div");
+          box.classList.add("box");
+          box.style.backgroundColor = colors[i];
+          document.querySelector(".wrap").appendChild(box);
+          const allBox = document.querySelectorAll(".box");
+          point.innerText = allBox.length;
+        }
+        const allBox = document.querySelectorAll(".box");
+        console.log(allBox);
+
+        allBox.forEach((e) => {
+          e.addEventListener("click", function () {
+            e.classList.remove("box");
+            const allBox = document.querySelectorAll(".box");
+            point.innerText = allBox.length;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
