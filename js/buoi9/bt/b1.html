@@ -59,6 +59,7 @@
       allBox.forEach((e) => {
         e.addEventListener("click", function () {
           e.classList.remove("box");
+          const allBox = document.querySelectorAll(".box");
           point.innerText = allBox.length;
         });
       });
