@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="start">
+      <div class="form">
+        <input type="text" id="username" placeholder="Nhap ten" />
+        <input type="text" id="avatar" placeholder="Nhap url avatar" />
+        <button id="btn-start">Bat dau game</button>
+      </div>
+    </div>
+    <div id="game">
+      <div class="game-container">
+        <h2>Thử tài tính toán nào bạn ơi!</h2>
+
+        <div class="game-info">
+          <p class="score-box">Score : <span class="score"></span></p>
+          <p class="time-box">Time : <span class="time"></span></p>
+          <p class="high-score-box">
+            High Score: <span class="high-score"></span>
+          </p>
+        </div>
+
+        <div class="main">
+          <div id="primary-number">7</div>
+          <div id="operator">+</div>
+          <div id="secondary-number">10</div>
+          <div id="equal">=</div>
+          <div>
+            <input type="text" id="result" />
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-wrapper">
+        <h2>Bảng xếp hạng</h2>
+        <div class="lb-list">
+          <div class="list-header">
+            <div class="list-rank"></div>
+            <div class="list-info">Học viên</div>
+            <div class="list-score">Điểm</div>
+          </div>
+          <div class="list-player-wrapper">
+            <div class="list-player">
+              <!-- RENDER OTHER RANK STUDENT -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="end">
+      <p>
+        Diem cua ban la:
+        <span id="score-end-game"></span>
+      </p>
+      <div class="choice">
+        <button id="btn-again">Choi lai</button>
+        <button id="btn-reload">Thoat game</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>
