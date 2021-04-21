@@ -146,6 +146,7 @@ btn_save.addEventListener("click", function () {
   } else {
     alert("Mat khau nhap lại sai");
   }
+  Array.from(inputs).map((input) => (input.value = ""));
 });
 
 function init() {
